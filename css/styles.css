@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav{
+    border-bottom: 2px solid;
+    background-color: #004E87;
+    height: 100px;
+    display: flex;
+}
+/* Design of the name of the site */
+.name-section{
+    /* background-color: aqua; */
+    width: 50%;
+    height: 100%;
+}
+
+.name-section p{
+        font-family: "Shadows Into Light", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2.1vmax;
+        color: white;
+        padding-left: 10px;
+        line-height: 100px;
+}
+
+.link-section{
+    /* background-color: violet; */
+    width: 40%;
+    height: 100%;
+    text-align: right;
+    display: flex;
+    
+}
+
+.link-section a{
+    color: white;
+    line-height: 100px;
+    font-size: 1.2vmax;
+}
+
+.photo-section{
+    /* background-color: tomato; */
+    height: auto;
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.photo-img{
+    /* background-color: antiquewhite; */
+    height: 70%;
+    width: 55%;
+    text-align: center;
+}
+.photo-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    align-items: center;
+}
