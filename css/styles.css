@@ -8,9 +8,9 @@
 /* Desging of the nav bar */
 .nav{
     border-bottom: 2px solid;
-    width: 100%;
+    max-width: 100%;
     background-color: #004E87;
-    height: 100px;
+    max-height: auto;
     display: flex;
     box-shadow: 0px 15px 10px -15px #004E87;   
     z-index: 10;
@@ -31,7 +31,7 @@
         font-family: "Shadows Into Light", cursive;
         font-weight: 400;
         font-style: normal;
-        font-size: 2.1vmax;
+        font-size: 2em;
         color: #ffffff;
         padding-left: 10px;
         line-height: 100px;
@@ -39,12 +39,12 @@
 .name-section p:hover{
     color: aqua;
 }
+
+
 /* Design of the links the page */
 .link-section{
-    /* background-color: violet; */
     width: 60%;
     height: 100%;
-    /* margin-left: 0 auto; */
 }
 
 .menu{
@@ -54,7 +54,6 @@
 }
 
 .menu ul{
-    /* background-color: chocolate; */
     text-align: right;
     margin-right: 10px;
 }
@@ -63,7 +62,6 @@
     display: inline;
     margin-left: 20px;
     font-size: 1.2vmax;
-    /* background-color: turquoise; */
 }
 .menu li a{
     display: inline;
@@ -78,7 +76,6 @@
 
 /* Design of the photo */
 .photo-section{
-    /* background-color: tomato; */
     height: auto;
     width: 10%;
     height: 100%;
@@ -87,7 +84,6 @@
     align-items: center;
   }
 .photo-img{
-    /* background-color: antiquewhite; */
     height: 70%;
     width: 55%;
     text-align: center;
@@ -105,53 +101,90 @@
 
 /* DESIGN OF THE CONTENT THE PAGE */
 .content{
-    margin-top: 120px; 
+    margin-top: 20px; 
 }
 
 .content-information{
     display: flex;
     height: 100%;
+    padding: 20px;
+    gap: 20px;
 }
 
 .list-content{
-    width: 35%;
+    width: 30%;
+    height: 100%;
     justify-content: center;
     display: flex;
-    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .menu-list{
-    width: 50%;
+    width: 100%;
 }
 
 .menu-list>p{
     text-align: left;
     line-height: 50px;
     font-size: 23px;
+    margin-bottom: 20px;
 }
 
 .menu-list>ul{
-    line-height: 45px;
-    font-size: 1.2vmax;
+    line-height: 2.2;    
 }
 
+.menu-list>ul>li:hover{
+    background-color: #004E87;
+}
 
 .menu-list>ul>li>a{
     color: black;
     font-weight: 600;
-    transition: transform .10s ease-in-out;
+    text-decoration: none;
+    transition: transform .10s ease-in-out color 0.2s;
 }
 
+.menu-list>ul>li>a>p{
+    font-size: 1.0rem;
+}
 
 .menu-list>ul>li>a>p:hover{
-    transform: translateX(5px); 
-    color: #63aee3;    
+    transform: translateX(15px); 
+    color: #fdfdfd;    
 }
 .information{
-    background-color: violet;
+    /* background-color: violet; */
     width: 65%;
 }
 
+.information {
+    background-color: #ffffff;
+    width: 70%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-height: 100%;
+    border-left: 1px solid #000000;
+  }
+  
+  .information h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    color: #004E87;
+    margin-top: 20px;
+  }
+
+  .information p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+    font-size: .9rem;
+    color: #555;
+    margin-top: 20px;
+  }
 
 .footer{
     margin-top: 50px;
@@ -241,3 +274,167 @@
  .foco-active>a{
     color: aqua;
  }
+
+
+ 
+/* MEDIA QUERY  */
+@media (max-width: 1300px) {
+    .nav {
+        display: block;
+        background-color: antiquewhite;
+       }
+     
+       .name-section {
+         margin-bottom: 0px;
+         text-align: center;
+         width: 100%;
+         background-color: blueviolet;
+       }
+       .name-section p{
+        font-size: 3em;
+       }
+     
+       .link-section {
+         background-color: aqua;
+         width: 100%;
+         margin-bottom: 0px;
+         text-align: center;
+       }
+     
+       .menu {
+         display: block;
+         text-align: center;
+        line-height: 50px;
+       }
+     
+       .menu ul {
+         gap: 0px;
+         text-align: center;
+       }
+       
+       .menu ul>li>a{
+        font-size: 1.2em;
+        line-height: 2px;
+        padding: 3px;
+       }
+       .photo-section {
+         background-color: teal;
+         width: 100%;
+         max-height: 200px;
+         justify-content: center;
+       }
+
+       
+
+       .photo-section img{
+         max-width: 100%;
+         max-height: 100px;
+         justify-content: center;
+       }
+ 
+}
+
+@media (max-width: 768px) {
+    
+    .menu ul>li>a{
+        font-size: 1.2em;
+        line-height: 10px;
+        padding: 0px;
+       }
+
+    .name-section p{
+        font-size: 2.5em;
+    }
+    .list-content{
+        width: 10%;
+        justify-content: left;
+        padding: 0px;
+        margin: 0;
+    }
+    .menu-list>ul>li>a>p:hover{
+        transform: translateX(0px); 
+        color: #fdfdfd;    
+    }
+    .content-information {
+        gap: 0px;
+        display: block;
+
+    }
+  
+    .list-content {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .information {
+      width: 100%;
+      border: none;
+      padding: 0px;
+    }
+
+
+        
+    .footer{
+        max-height: auto;
+    }
+    .footer-img{
+        margin-bottom: 30px;
+    }
+    .footer-img img{
+         max-width: 20%;
+    }
+    .footer-img p{
+        font-size: 1.8em;
+        color: #ffffff;
+        
+    }
+
+    .social-media{
+        width: 50%;
+        height: 50%;
+        text-align: center;
+        user-select: none;
+        line-height: 1px;
+    }
+
+    .social-media-img img{
+        max-width: 30px;
+        margin-top: 20px;
+        padding: 10px;
+        line-height: 10px;
+    }
+
+    .titulo-infonav h2{
+        color: #ffffff;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 800;
+        font-size: .8em;
+        text-align: center;
+    }
+
+
+    .navegation ul{
+        padding: 15px;
+        height: auto;
+    }
+
+    .navegation li{
+        padding: 15px;
+        color: #ffffff;
+        text-align: left;
+        margin-left: 10%;
+
+    }
+    .navegation ul>li>a>p:hover{
+        color: aqua;
+        height: auto;
+
+    }
+    .navegation li>a>p{
+        color: #ffffff;
+        font-size: 1.1vmax;
+        color: #ffffff;
+        line-height: 1px;
+    }
+
+  }
