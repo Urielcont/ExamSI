@@ -1,0 +1,31 @@
+.content-index{
+    background-color: aquamarine;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    display: block;
+}
+.img-index{
+    background-color: burlywood;
+    width: 100%;
+    display: inline;
+}
+.content-pages{
+    background-color: violet;
+    display: flex;
+    margin: 15px auto;
+}
+
+.card-nav{
+    background-color: brown;
+}
+
+.card-nav h2{
+    font-size: 10px;
+}
+
+.card-nav img{
+    width: 50px;
+}
