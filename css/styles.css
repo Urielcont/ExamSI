@@ -281,14 +281,14 @@
 @media (max-width: 1300px) {
     .nav {
         display: block;
-        background-color: antiquewhite;
+        /* background-color: antiquewhite; */
        }
      
        .name-section {
          margin-bottom: 0px;
          text-align: center;
          width: 100%;
-         background-color: blueviolet;
+         /* background-color: blueviolet; */
        }
        .name-section p{
         font-size: 3em;
@@ -318,7 +318,7 @@
         padding: 3px;
        }
        .photo-section {
-         background-color: teal;
+         /* background-color: teal; */
          width: 100%;
          max-height: 200px;
          justify-content: center;
